@@ -123,7 +123,7 @@ const teamDataMain = [
     { name: 'Margarida Sebastião',role: 'leader', dept: 'Geographic / Metrics', deptIcon: 'fa-map',       photo: 'photos/Margarida.png' },
     { name: 'Matilde Silva',      role: 'leader', dept: 'Budget',               deptIcon: 'fa-coins',     photo: 'photos/Matilde.png'   },
     { name: 'Francisco Caravana', role: 'leader', dept: 'External Relations',   deptIcon: 'fa-handshake', photo: 'photos/Francisco.jpg' },
-    { name: 'Tiago Carvalho',     role: 'leader', dept: 'Software',             deptIcon: 'fa-code',      photo: 'photos/Tiago.png'     },
+    { name: 'Tiago Carvalho',     role: 'leader', dept: 'Software',             deptIcon: 'fa-code',      photo: 'photos/Tsiago.png'     },
 ];
 
 const deptData = [
@@ -261,3 +261,17 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px' });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// ---- 10. Roadmap popup — touch/click for mobile ----
+document.querySelectorAll('.roadmap-seg').forEach(seg => {
+    seg.addEventListener('click', (e) => {
+        const isActive = seg.classList.contains('active');
+        document.querySelectorAll('.roadmap-seg').forEach(s => s.classList.remove('active'));
+        if (!isActive) seg.classList.add('active');
+        e.stopPropagation();
+    });
+});
+
+document.addEventListener('click', () => {
+    document.querySelectorAll('.roadmap-seg').forEach(s => s.classList.remove('active'));
+});
