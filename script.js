@@ -123,7 +123,7 @@ const teamDataMain = [
     { name: 'Margarida Sebastião',role: 'leader', dept: 'Geographic / Metrics', deptIcon: 'fa-map',       photo: 'photos/Margarida.png' },
     { name: 'Matilde Silva',      role: 'leader', dept: 'Budget',               deptIcon: 'fa-coins',     photo: 'photos/Matilde.png'   },
     { name: 'Francisco Caravana', role: 'leader', dept: 'External Relations',   deptIcon: 'fa-handshake', photo: 'photos/Francisco.jpg' },
-    { name: 'Tiago Carvalho',     role: 'leader', dept: 'Software',             deptIcon: 'fa-code',      photo: 'photos/tiago.png'     },
+    { name: 'Tiago Carvalho',     role: 'leader', dept: 'Software',             deptIcon: 'fa-code',      photo: 'photos/Tiago.png'     },
 ];
 
 const deptData = [
